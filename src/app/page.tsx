@@ -1,91 +1,71 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import profilePic from '@/assets/cover-home.png'
+import vision from '@/assets/vision.png'
+import ia from '@/assets/ia.png'
+import iot from '@/assets/iot.png'
+import robotic from '@/assets/robotic.png'
 
-const inter = Inter({ subsets: ['latin'] })
+import Styles from './home.module.css'
+import CommonStyles from '@/styles/common.module.css'
+import { Card } from '@/components/Card'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
+    <main className={Styles.container}>
+      <section className={Styles.cover}>
+        <h1 className={CommonStyles.heading}>
+          Olá, Seja bem-vindo ao Núcleo de Automação, Visão, Inteligência
+          Artificial e Robótica
+        </h1>
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          className={CommonStyles.img}
+          src={profilePic}
+          alt="Picture of the author"
         />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
+      </section>
+
+      <section>
+        <h1 className={CommonStyles.title}>Somos especialistas em inovação</h1>
+        <p className={CommonStyles.paragraph}>
+          Isso está em nosso DNA, aqui oferecemos soluções tecnológicas para o
+          mercado local e global, por meio de menter brilhantes que atuam
+          conosco com o desejo de transformar o imporssivel em realiadade.
+          Confira nossas soluções
+        </p>
+
+        <div className={Styles.cards}>
+          <Card
+            title="Visão Computacional: revolucionando a forma como o mundo é
+              percebido"
+            subtitle="Desvendando o poder da análise de imagens e vídeos por meio da
+              tecnologia."
+            image={vision}
+          />
+          <Card
+            title=" A revolução IoT: Transformando
+              o mundo conectado"
+            subtitle="Explorando as possibilidades e desafios da Internet das coisas."
+            image={iot}
+          />
+          <Card
+            title="Robótica: a evolução da automação"
+            subtitle="Explorando as aplicações e desafios da robótica na indústria e na sociedade"
+            image={robotic}
+          />
+          <Card
+            title="Inteligência Artificial: mudando o futuro da tecnologia"
+            subtitle="Entendendo a evolução e os desafios da IA na automação de processos e na tomada de decisões"
+            image={ia}
+          />
         </div>
-      </div>
+      </section>
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <section>
+        <h1 className={CommonStyles.title}>Parceiros</h1>
+        <p className={CommonStyles.paragraph}>
+          Veja quem faz parte da nossa história e inova conosco
+        </p>
+      </section>
     </main>
   )
 }

@@ -1,0 +1,26 @@
+.heading {
+  font-size: 2.5rem;
+  line-height: 4rem;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 4rem;
+
+  color: var(--dark);
+}
+
+.img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  color: var(--gray);
+}

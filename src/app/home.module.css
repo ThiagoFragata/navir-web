@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.cover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cards {
+  margin: 3rem auto 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .cover {
+    flex-wrap: wrap-reverse;
+  }
+
+  .cover h1 {
+    text-align: center;
+  }
+}

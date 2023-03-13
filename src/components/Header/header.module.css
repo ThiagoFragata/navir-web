@@ -1,0 +1,56 @@
+.navigation {
+  max-width: 1600px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 1rem;
+}
+
+.brand {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+
+  transition: .2s ease-in-out;
+}
+
+.items a:focus {
+  border-bottom: 2px solid var(--primary);
+}
+
+.items a:hover {
+  color: var(--primary);
+}
+
+.callToAction {
+  padding: 1rem;
+  border-radius: .5rem;
+
+  background: var(--primary);
+  color: var(--light);
+  font-weight: 600;
+
+  transition: .2s ease-in-out;
+}
+
+.callToAction:hover {
+  filter: brightness(0.9);
+}
