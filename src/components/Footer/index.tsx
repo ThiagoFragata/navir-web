@@ -3,8 +3,8 @@ import Styles from './footer.module.css'
 
 import {
   BsBookmarkHeartFill,
-  BsFacebook,
   BsInstagram,
+  BsLinkedin,
   BsMenuAppFill,
   BsPinMapFill,
 } from 'react-icons/bs'
@@ -49,10 +49,13 @@ export function Footer() {
           </h2>
 
           <div>
-            <Link href="/">
-              <BsFacebook size="2em" />
+            <Link
+              href="https://www.linkedin.com/company/navir-ufam/"
+              target="_blank"
+            >
+              <BsLinkedin size="2em" />
             </Link>
-            <Link href="/">
+            <Link href="https://www.instagram.com/navir_ufam/" target="_blank">
               <BsInstagram size="2em" />
             </Link>
           </div>
