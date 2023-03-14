@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 import StyledComponentsRegistry from '@/app/registry'
 
 import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 export const metadata = {
   title: {
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <Header />
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <Footer />
       </body>
     </html>
   )

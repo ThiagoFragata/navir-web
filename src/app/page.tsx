@@ -60,12 +60,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <h1 className={CommonStyles.title}>Parceiros</h1>
         <p className={CommonStyles.paragraph}>
           Veja quem faz parte da nossa história e inova conosco
         </p>
-      </section>
+      </section> */}
     </main>
   )
 }
